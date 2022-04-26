@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*----- Primary colors-----*/
+:root {
+    --DarkBlue:hsl(217, 28%, 15%);
+   /*----- Main-Background-----*/
+    --DarkBlueBackground:hsl(218, 28%, 13%);
+    /*----- Footer Background-----*/
+    --DarkBlueFooter: hsl(216, 53%, 9%);
+    /*----- Testimonials Background-----*/
+    --DarkBlueTestimonials: hsl(219, 30%, 18%);
+
+    /*----- Accent-----*/ 
+     /*----- Inside call to action-----*/
+     --cyan: hsl(176, 68%, 64%);
+     --blue: hsl(198, 60%, 50%);
+      /*----- Error-----*/
+     --light-red: hsl(0, 100%, 63%);
+
+      /*----- Neutral-----*/
+
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    font-size: 14px;
+    background-color:var(--DarkBlue);
+    font-family:'Open sans', sans-serif;
+    font-weight: 10;
+    color: var(--white);
+    
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+p {
+    line-height: 1.5;
+    font-weight: 400;
+}
+h2, h3 {
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+.curvy {
+    position: absolute;
+    z-index: -1;
+    top:600px;
+    width: 100%;
+}
+.mobile {
+   position: absolute;
+   z-index: -1;
+   top: 350px;
+   display: none;
+   width: 100%;
+}
+.nav-header {
+    margin-top:40px;
+    padding: 0 20px;
+}
+
+.nav-header img  {
+    width: 100px;
+    height: 30px;
+}
+.nav-header .nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.nav-header .nav ul li {
+    margin: 15px;
+}
+.nav-header .nav ul a {
+    transition: border 300ms ease;
+    font-weight: 700;
+}
+.nav-header .nav ul a:hover {
+   border-bottom:4px solid var(--white)
+}
+.nav-header .nav ul li a {
+    font-size: 16px;
+    
+}
+
+.section {
+    text-align: center;
+
+}
+.section .image img {
+    width: 500px;   
+}
+.section h2 {
+    font-weight: 700;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.section p {
+    max-width: 380px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 400;
+
+    
+}
+.section .cta {
+    background: linear-gradient(to right, var(--cyan), var(--blue));
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    width: 200px;
+    border: none;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-family: 'Raleway', sans-serif;
+}
+.section .cta:hover {
+    box-shadow: 0 0 10px var(--cyan);
+}
+.section .cta:focus {
+    outline: none;
+}
+.display {
+    background-color: var(--DarkBlueBackground);
+    margin-top: 100px;
+    padding: 0 50px;
+    width: 100%;
+    height: 200%;
+}
+.display .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.display .grid .box img {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.display .box h2 {
+    font-weight: 700;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.display .box p {
+    max-width: 320px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-transform: center;
+    text-align: center;
+    font-weight: 400;
+}
+.productive {
+    position: relative;
+    top: 100px;
+}
+.productive .description {
+    margin-left: 40px;
+}
+.productive .description h2 {
+    font-size: 35px;
+    max-width: 400px;
+    font-weight: 700;
+}
+.productive .description .first {
+    margin-top: 30px;
+    line-height: 2.5;
+    font-weight: 400;
+}
+.productive .description .second {
+    margin-top: 15px;
+    line-height: 2.5;
+}
+.description a {
+    color: var(--cyan);
+    padding: 10px 0;
+    border-bottom: 2px solid var(--cyan);
+    position: relative;
+    top: 10px;
+    
+}
+/* .white {
+    display: none;
+} */
+
+
+.description img {
+    width: 20px;
+    text-align: center;
+    position: relative;
+    top:6px;
+    transition: color;
+    fill:red;
+}
+
+.description a:focus {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+    
+}
+.profiles {
+    position: relative;
+    top:100px;
+    width: 100%;
+}
+.profiles .quote {
+    position: relative;
+    top:35px;
+    width: 70px;
+    height: 70px;
+   
+}
+.profiles .box {
+    position: relative;
+    z-index: 100;
+    
+   
+}
+.profiles .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.profiles .profile {
+    width: 100%;
+    
+}
+.profiles img {
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    
+}
+.profiles .box .profile {
+    background-color: var(--DarkBlueTestimonials);
+    padding: 25px;
+}
+.profiles .box .profile p {
+    color:rgba(209, 209, 209, 0.533);
+    text-align: left;
+    line-height: 2.0;
+}
+.profiles .box .profile grid {
+    grid-template-columns: 30%, 70%;
+}
+.profiles .box .profile .grd h4 {
+    font-size: 12px;
+}
+.profiles .box .profile .grd p {
+    font-size: 10px;
+}
+.grd {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    
+}
+.email b {
+    background-color: var(--DarkBlueBackground);
+    display: block;
+}
+.email  {
+    text-align: center;
+    background-color: var(--DarkBlue);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-top: 60px;
+     max-width: 750px;
+    margin: 0 auto; 
+    position: relative;
+    top: 200px;
+    z-index: 1;
+}
+.email h2 {
+    font-weight: 400;
+    line-height: 3.4;
+}
+.email p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: lighter;
+    line-height: 1.9;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.email [type="email"] {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    height: 20px;
+    border-radius: 35px;
+    border: none;
+    color: #777;
+}
+.email .cta-btn {
+    background: linear-gradient(to right, var(--cyan), var(--blue));
+    padding: 13px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    transition: box-shadow 300ms ease;
+    
+}
+.email .cta-btn:hover {
+    box-shadow: 0 0 10px var(--cyan);
+
+}
+
+.email [type="email"],
+.email .cta-btn:focus {
+    outline: none;
+}
+.email h5 {
+    color: var(--light-red);
+    text-align: left;
+    margin-left: 80px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.row {
+    background-color: var(--DarkBlueFooter);
+    margin: 0;
+    position: relative;
+    left: 0;
+    margin-top: 150px;
+    padding: 100px 50px;
+}
+.row .logo-foot {  
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+}
+.row .grid {
+    grid-template-columns:35% 15% 15% 15% 15%;
+    margin-top: 30px;
+    gap: 40px;
+    padding: 0 20px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sectgrid {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.sectgrid img {
+    width: 30%;
+    height: 20px;
+    max-height: 20px;
+    margin-top: 10px;
+    
+    
+}
+.sect li {
+    width: 300px;
+}
+.sect img {
+    width: 7%;
+    height: 20px;
+    max-height: 20px;
+    margin-top: 10px;
+    
+}
+.sec1 {
+  margin-left: 20px;
+  
+}
+.sect li {
+    margin-bottom: 15px;
+}
+.sect li span{
+    margin-left:20px;
+    font-size:16px;
+    margin: 0 15px;
+    font-weight: 400;
+}
+.sect li a {
+    font-size: 16px;
+    font-weight: 400;
+    transition: border 300ms ease;
+}
+.sect li a:hover {
+    border-bottom: 4px solid white;
+}
+.row .sect:nth-child(3) {
+    margin-left: 30px;
+}
+.sectgrid p {
+    width: 350px;
+    margin-left: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+*/
+ /*----- Utility Classes----*/
+ .container {
+     max-width: 1440px;
+     margin: 0 auto;
+     padding: 40px;
+     
+ }
+ .flex {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .grid {
+     display: grid;
+     justify-content: center;
+ }
+ @media (max-width:375px) {
+    .nav-header .nav ul{
+        gap: 5px;
+    }
+    .nav-header{
+        margin-top: 10px;
+    }
+    .section {
+       margin-top: 90px;
+    }
+    .section .image img {
+        width: 200px;
+        
+    }
+    .section h2 {
+        font-weight: 700;
+        max-width: 400px;
+        margin: 30px auto;
+    }
+    .section p {
+        max-width: 380px;
+        margin: 0 auto;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .section .cta {
+        margin: 30px 0;
+    }
+    .display {
+        margin-top: 10px;
+        height: 100%;
+        padding: 0 20px;
+        
+    }
+    .curvy {
+       display:none;
+    }
+    .mobile {
+       display: block;
+       margin-top: px;
+    }
+    .display .grid {
+        grid-template-columns: 1fr;
+    }
+    .productive .description h2 {
+        font-size: 20px;
+        max-width: 340px;
+        
+    }
+    .productive .description {
+        margin-left: 0;
+    }
+     .grid {
+     grid-template-columns: 1fr;
+     }
+     .profile {
+        width: 100%;
+     }
+    .profiles {
+        top: 200px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .profiles .grid {
+        gap: 20px;
+    }
+    .profiles .box {
+        max-width: 340px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .email-b {
+        padding:10px;
+    }
+    .email {
+        top: 90px;
+        margin-top: 250px;
+    }
+    .email [type="email"]  {
+        width: 100%;
+    }
+    .email .cta-btn {
+        margin-top: 20px;
+        display: inline-block;
+        width: 100%;
+    }
+    .container {
+        padding:0;
+        max-width: 380px;
+    }
+    .row {
+        top:100px;
+        padding-top:100px;
+        padding: 0 20px;
+    }
+    .row .grid {
+        grid-template-columns: 1fr;
+        text-align: left;
+        padding: 20px;
+        display: relative;
+        left: 0;
+    }
+    .row .sect:nth-child(3) {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .sect li span {
+        margin: 15px 20px;
+        font-size: 16px;
+    }
+    .sec1 {
+        margin: 0;
+    }
+    .sectgrid p {
+        width: auto;
+        margin: 0;
+        padding-left: 10px;
+    }
+    .sect li a {
+        font-size: 16px;
+    }
+    .row .logo-foot {
+        padding: 0 10px;
+    }
+    footer img {
+        margin:0 auto;
+    }
+    .row .logo-foot {
+        width: 180px;
+    }
+    .sectgrid img {
+        width: 40%;
+    }
+    .email h5 {
+        margin: 0;
+        text-align: center;
+        margin: 10px 0;
+        font-weight: 400;
+    }
+    .nav-header .nav ul li {
+     margin: 5px;
+    }
+    .nav-header .nav ul li a {
+        font-size:14px;
+        font-weight: 400;
+    }
+ }
