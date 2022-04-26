@@ -1,7 +1,9 @@
 # SIDE-HUSTLE-PRJ
 GROUP 50_SIDE HUSTLE
-Name of team: Group 50
-Name of team Leader: Onuh Ugbeda
+Name of team: Group 50.
+
+Name of team Leader: Onuh Ugbeda.
+
 List of team members:
 1. ONUH UGBEDA (SH-IT-0036744) 
 2. Confidence OKAKA (SH-IT-0114383) 
